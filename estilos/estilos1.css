@@ -1,0 +1,118 @@
+/* 
+    Document   : estilos
+    Created on : 21/Nov/2013, 10:13:42
+    Author     : Rlinhares
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+/**/
+/* Layout de administração */
+    .admin{width: 100%;}
+
+    .faixamenu{line-height: 30px; vertical-align: middle; color: blue;}
+    .faixamenu1{background: #333; border-top: 1px solid ; color: blue;}
+    .faixalogo{text-align: center; vertical-align: middle;color:blue; }
+    #logoDiv{margin-top: 4px;}
+
+    .faixamenu a, .faixamenu a:hover{font: bold 12px verdana; text-decoration: none;}
+    .faixamenu a{color: blue;}
+    .faixamenu a:hover{color: blue;}
+
+    
+/**/
+/*=== menus - Verticais ===*/
+    .menuVer {margin: 0px; padding: 0px;
+            list-style: none;} /* não mostra as marcas de lista */   
+    .menuVer li {
+            float: left; /* faz com que o menu fique horizontal */
+            width: 160px;
+            position: relative;} /* faz com que o submenu fique na vertical - relativo ao menu principal */          
+    .menuVer li a {background: #333; color: #fff; display: block; padding: 7px 8px; text-decoration: none; }
+    .menuVer li a:hover {color: blue;}
+
+    /*=== submenu - Vertical ===*/
+    .menuVer ul {display: none; position: absolute; margin-left: 0px; list-style: none; padding: 0px;}
+    .menuVer ul li {width: 160px; text-align: right;}
+    .menuVer ul a {display: block; height: 15px; padding: 7px 8px; color: #fff; text-decoration: none; border-top: 1px solid #ffa500;}
+    .menuVer ul li a:hover {color:#FFA500;}
+
+
+/**/
+/* Estilos dos formulários */
+    .formTable{width: 100%; min-height: 400px; border: 1px #666 solid; }
+
+    .Titulo{font: bold 18px verdana; font-variant: small-caps; color: green;}
+    .subTitulo{font: bold 14px verdana; font-variant: small-caps; color: #FF8C00;}
+    .rotulo{font: bold 12px verdana; text-align: right;}
+    .campo{font: bold 12px verdana;}
+
+    input {font: 12px verdana; color: #666;}
+    hr{color: #FF8C00;}
+    hr .linhaTopo{size: 10px;}
+    
+    a.voltar{font: bold 10px verdana; color: #333; text-decoration: none;}
+    a.voltar:hover{color: #FF8C00;}
+
+/**/
+/* Tabela de listagem de dados */
+    .listagem{min-width: 700px; border: 1px #ff8C00 solid;}
+    .cabecalho{font: bold 14px verdana; font-variant: small-caps; color: #000; background: #99FFFF;}
+    .listagem .linha1{font: 12px verdana; color: #000; background: #F2F2F2; vertical-align: middle;}
+    .listagem .linha2{font: 12px verdana; color: #FFF; background: #333; vertical-align: middle;}
+
+/* Cantos redondos */
+.cRedondos{-moz-border-radius: 15px; 
+           -webkit-border-radius: 15px;  
+           border-radius: 15px;}
+
+section {
+	float: left;
+	clear: both;
+	margin: 20px 10px 10px 10px;
+}
+form {
+	padding: 10px;
+}
+
+legend {
+	font-size: 18px;
+	font-weight: 400;
+	padding-left: 10px;
+}
+
+input:required  { border:solid 2px red; }
+input:valid  { border:solid 2px green; }
+input:invalid + .validation-message { display: inline; }
+input:valid + .validation-message { display: none; }
+select:required  { border:solid 2px red; }
+select:valid  { border:solid 2px green; }
+select:invalid + .validation-message { display: inline; }
+select:valid + .validation-message { display: none; }
+textArea:required  { border:solid 2px red; }
+textArea:valid  { border:solid 2px green; }
+textArea:invalid + .validation-message { display: inline; }
+textArea:valid + .validation-message { display: none; }
+
+
+
+
+/* error message */
+.error {height:15px; background-color:#ccc; font: 10px arial; border:1px solid #333; padding:4px 10px; color:#000; display:none;
+        -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+        -moz-box-shadow: 2px 2px 2px #888;
+        -webkit-box-shadow: 2px 2px 2px #888;
+        box-shadow: 2px 2px 2px #888;
+}
+.error p {margin:0;}
+
+.error {margin:0 0 2px; padding:2px 6px;}
+/* seta da mensagem de erro */
+.error em {border: 10px solid; border-color:#ccc transparent transparent;
+        bottom:-17px; display:block; height:0px; left:60px; position:absolute; width:0px;}
+    
+
+    

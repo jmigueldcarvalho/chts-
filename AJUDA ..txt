@@ -1,0 +1,4 @@
+1º Depois de extrair o ficheiro, copiar a pasta CHTS, para o htdocs ( xamp ) ou a pasta de destino do servidor
+2º fazer upload da base de dados no phpmyadmin ( chts ) 
+3º abrir o navegador ( chrome ) na barra de endereço introduzir ( localhost/chts/ ) 
+4º irá aparecer a página a pedir o utilizador e password ( ut:0212 ; pw: admin)

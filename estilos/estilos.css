@@ -1,0 +1,98 @@
+/* 
+    Document   : estilos
+    Created on : 21/Nov/2013, 10:13:42
+    Author     : Rlinhares
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+/**/
+/* Layout de administração */
+    .admin{width: 100%;}
+
+    .faixamenu{line-height: 30px; vertical-align: middle; background:imagens/logo.jpg; color: green;}
+    .faixamenu1{background: #333; border-top: 1px solid #fff;}
+    .faixalogo{text-align: center; vertical-align: middle; }
+    #logoDiv{margin-top: 4px;}
+
+    .faixamenu a, .faixamenu a:hover{font: bold 12px verdana; text-decoration: none;}
+    .faixamenu a{color: green;}
+    .faixamenu a:hover{color: green;}
+
+    
+/**/
+/*=== menus - Verticais ===*/
+    .menuVer {margin: 0px; padding: 0px;
+            list-style: none;color:green;} /* não mostra as marcas de lista */   
+    .menuVer li {
+            float: left; /* faz com que o menu fique horizontal */
+            width: 160px;
+            position: relative;color:green;} /* faz com que o submenu fique na vertical - relativo ao menu principal */          
+    .menuVer li a {background: #333; color: green; display: block; padding: 7px 8px; text-decoration: none; }
+    .menuVer li a:hover {color: blue;}
+
+    /*=== submenu - Vertical ===*/
+    .menuVer ul {display: none; position: absolute; margin-left: 0px; list-style: none; padding: 0px;}
+    .menuVer ul li {width: 160px; text-align: right;}
+    .menuVer ul a {display: block; height: 15px; padding: 7px 8px; color: #fff; text-decoration: none; border-top: 1px solid #ffa500;}
+    .menuVer ul li a:hover {color:#FFA500;}
+
+
+/**/
+/* Estilos dos formulários */
+    .formTable{width: 100%; min-height: 400px; border: 1px #666 solid; }
+
+    .Titulo{font: bold 18px verdana; font-variant: small-caps; color: #FF8C00;}
+    .subTitulo{font: bold 14px verdana; font-variant: small-caps; color: #FF8C00;}
+    .rotulo{font: bold 12px verdana; text-align: right;}
+    .campo{font: bold 12px verdana;}
+
+    input, select, textarea {font: 12px verdana; color: #666;}
+    input:required, select:required, textarea:required  { border:solid 1px red; }
+    input:valid, select:valid, textarea:valid  { border:solid 1px #666; }
+    input:invalid + .validation-message , select:invalid + .validation-message , textarea:invalid + .validation-message { display: inline; }
+    input:valid + .validation-message, select:valid + .validation-message, textarea:valid + .validation-message { display: none; }
+        
+    hr{color: #FF8C00;}
+    hr .linhaTopo{size: 10px;}
+    
+    a.voltar{font: bold 10px verdana; color: #333; text-decoration: none;}
+    a.voltar:hover{color: #FF8C00;}
+
+/* Cantos redondos */
+.cRedondos{-moz-border-radius: 15px; 
+           -webkit-border-radius: 15px;  
+           border-radius: 15px;}
+
+           /* formularios livros*/
+
+.pedform { border: 4px solid #00CC33; background-color: ; align:center; width: 500px 
+
+}
+
+.p {
+    font-family: "Times New Roman", Times, serif;
+} 
+
+
+input[type='submit'] {
+    -webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+    -moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+    box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+    color:#333;
+    background-color:#7cceee;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border:none;
+    font-family:'Helvetica Neue',Arial,sans-serif;
+    font-size:16px;
+    font-weight:700;
+    height:32px;
+    padding:4px 16px;
+   
+}
+
